@@ -1,0 +1,2 @@
+recursive-include file_import/templates *
+recursive-include file_import/static *

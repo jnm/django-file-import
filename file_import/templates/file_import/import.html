@@ -1,0 +1,13 @@
+<h2>Import Multiple Files</h2>
+<form enctype="multipart/form-data" action="" method="post">{% csrf_token %}
+    <table>
+        {{ form.as_table }}
+    </table>
+    <input type="submit"/>
+</form>
+<p>The name of each file within your ZIP archive should uniquely identify
+an instance of the destination model you specify. For example, if you
+selected a model called <em>Flavor</em> and an update key called <em>name</em>,
+and you uploaded a ZIP archive containing a file called <em>chocolate.png</em>,
+the importer would attempt to find an instance of <em>Flavor</em> with
+<em>name</em> equal to <em>chocolate</em>. Capitalization of the file name does not matter.</p>

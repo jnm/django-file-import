@@ -1,0 +1,17 @@
+<h2>Import Results</h2>
+{% if failures %}
+    <h3>Failures</h3>
+    <ul>
+    {% for failure in failures %}
+    <li>{{ failure }}</li>
+    {% endfor %}
+    </ul>
+{% endif %}
+{% if successes %}
+    <h3>Successes</h3>
+    <ul>
+    {% for success in successes %}
+    <li>{{ success }}</li>
+    {% endfor %}
+    </ul>
+{% endif %}
